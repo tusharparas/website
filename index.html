@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>House of Pasha | Luxury Couture</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--beige:#f3e8dc;
+--maroon:#6d1f2f;
+--gold:#c6a75e;
+--dark:#1a1a1a;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Montserrat',sans-serif;
+background:var(--beige);
+color:var(--dark);
+}
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 8%;
+background:var(--maroon);
+color:white;
+}
+
+header h1{
+font-family:'Cinzel',serif;
+letter-spacing:4px;
+font-size:30px;
+color:var(--gold);
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:14px;
+letter-spacing:1px;
+}
+
+nav a:hover{
+color:var(--gold);
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+background:url('https://images.unsplash.com/photo-1593032465175-7b19f3cda5f0') center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+position:relative;
+}
+
+.hero::after{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;ackground:rgba(109,31,47,0.6);
+}
+
+.hero h2{
+position:relative;
+font-family:'Cinzel',serif;
+font-size:60px;
+letter-spacing:3px;
+color:var(--gold);
+}
+
+/* SECTIONS */
+
+section{
+padding:90px 8%;
+}
+
+.section-title{
+text-align:center;
+font-family:'Cinzel',serif;
+font-size:38px;
+color:var(--maroon);
+margin-bottom:60px;
+}
+
+/* ABOUT */
+
+.about{
+max-width:850px;
+margin:auto;
+text-align:center;
+line-height:1.9;
+font-size:16px;
+}
+
+/* PRODUCTS */
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:40px;
+}
+
+.product-card{
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
+transition:0.4s;
+}
+
+.product-card:hover{
+transform:translateY(-12px);
+}
+
+.product-card img{
+width:100%;
+height:420px;
+object-fit:cover;
+}
+
+.product-info{
+padding:25px;
+text-align:center;
+}
+
+.product-info h3{
+font-size:20px;
+margin-bottom:8px;
+color:var(--maroon);
+}
+
+.design-no{
+font-size:14px;
+letter-spacing:1px;
+color:#777;
+margin-bottom:18px;
+}
+
+.btn{
+display:inline-block;
+padding:10px 22px;
+margin:6px;
+font-size:12px;
+letter-spacing:1px;
+text-decoration:none;
+border:1px solid var(--maroon);
+color:var(--maroon);
+transition:0.3s;
+}
+
+.btn:hover{
+background:var(--maroon);
+color:white;
+}
+
+.gold-line{
+width:80px;
+height:3px;
+background:var(--gold);
+margin:15px auto 40px auto;
+}
+
+/* CONTACT */
+
+.contact-box{
+text-align:center;
+font-size:16px;
+}
+
+/* FOOTER */
+
+footer{
+background:var(--maroon);
+color:white;
+text-align:center;
+padding:35px;
+margin-top:60px;
+}
+
+footer span{
+color:var(--gold);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+.hero h2{
+font-size:34px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>HOUSE OF PASHA</h1>
+<nav>
+<a href="#about">About</a>
+<a href="#collection">Collection</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<div class="hero">
+<h2>Timeless Royal Elegance</h2>
+</div>
+
+<section id="about">
+<h2 class="section-title">About House of Pasha</h2>
+<div class="gold-line"></div>
+<div class="about">
+House of Pasha is a luxury couture label rooted in heritage craftsmanship and modern royalty.
+Each creation is designed with intricate embroidery, rich fabrics and refined silhouettes —
+crafted for women who carry tradition with confidence and grace.
+<br><br>
+To preserve exclusivity, prices are shared privately upon enquiry.
+Kindly mention the design number while contacting us.
+</div>
+</section>
+
+<section id="collection">
+<h2 class="section-title">The Collection</h2>
+<div class="gold-line"></div>
+
+<div class="products">
+
+<div class="product-card">
+<img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf">
+<div class="product-info">
+<h3>Ivory Regal Ensemble</h3>
+<div class="design-no">Design No: HOP-201</div>
+<a class="btn" href="mailto:youremail@example.com?subject=Enquiry%20for%20Design%20HOP-201&body=Hi%20House%20of%20Pasha,%20I%20would%20like%20details%20for%20Design%20No:%20HOP-201">Email</a>
+<a class="btn" target="_blank" href="https://wa.me/YOURNUMBER?text=Hi%20House%20of%20Pasha,%20I%20am%20interested%20in%20Design%20No:%20HOP-201.%20Please%20share%20details.">WhatsApp</a>
+</div>
+</div>
+
+<div class="product-card">
+<img src="https://images.unsplash.com/photo-1593032465175-7b19f3cda5f0">
+<div class="product-info">
+<h3>Maroon Festive Classic</h3>
+<div class="design-no">Design No: HOP-202</div>
+<a class="btn" href="mailto:youremail@example.com?subject=Enquiry%20for%20Design%20HOP-202&body=Hi%20House%20of%20Pasha,%20I%20would%20like%20details%20for%20Design%20No:%20HOP-202">Email</a>
+<a class="btn" target="_blank" href="https://wa.me/YOURNUMBER?text=Hi%20House%20of%20Pasha,%20I%20am%20interested%20in%20Design%20No:%20HOP-202.%20Please%20share%20details.">WhatsApp</a>
+</div>
+</div>
+
+<div class="product-card">
+<img src="https://images.unsplash.com/photo-1612423284934-2850a87c2e64">
+<div class="product-info">
+<h3>Wedding Royal Edit</h3>
+<div class="design-no">Design No: HOP-203</div>
+<a class="btn" href="mailto:youremail@example.com?subject=Enquiry%20for%20Design%20HOP-203&body=Hi%20House%20of%20Pasha,%20I%20would%20like%20details%20for%20Design%20No:%20HOP-203">Email</a>
+<a class="btn" target="_blank" href="https://wa.me/YOURNUMBER?text=Hi%20House%20of%20Pasha,%20I%20am%20interested%20in%20Design%20No:%20HOP-203.%20Please%20share%20details.">WhatsApp</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Get In Touch</h2>
+<div class="gold-line"></div>
+<div class="contact-box">
+For private viewings, custom orders or wholesale enquiries:
+<br><br>
+📩 Email: houseofpasha.tp@gmail.com
+<br>
+💬 WhatsApp: +91 9836166609
+</div>
+</section>
+
+<footer>
+© 2026 <span>House of Pasha</span> | Crafted With Royal Precision
+</footer>
+
+</body>
+</html>
